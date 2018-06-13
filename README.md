@@ -12,17 +12,17 @@ Add the following line to `AndroidManifest.xml`:
 
 Include the following in your **app module** `build.gradle` file:
 
-`${latest.version}` is [![Download](https://api.bintray.com/packages/hotchemi/maven/permissionsdispatcher/images/download.svg)](https://bintray.com/hotchemi/maven/permissionsdispatcher/_latestVersion)
+`${latest.version}` 
 
 ```groovy
 apply plugin: 'kotlin-kapt'
 
 dependencies {
-  compile("com.github.hotchemi:permissionsdispatcher:${latest.version}") {
+  compile("com.YOUR_OWN_DISPATCH:permissionsdispatcher:${latest.version}") {
       // if you don't use android.app.Fragment you can exclude support for them
       exclude module: "support-v13"
   }
-  kapt "com.github.hotchemi:permissionsdispatcher-processor:${latest.version}"
+  kapt "com.YOUR_OWN_DISPATCH:permissionsdispatcher-processor:${latest.version}"
 }
 ```
 
