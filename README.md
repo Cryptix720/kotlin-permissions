@@ -8,7 +8,7 @@ From 3.1.1 we started support `.kt` file generation.
 
 Add the following line to `AndroidManifest.xml`:
  
-`<uses-permission android:name="android.permission.CAMERA" />`
+`<uses-permission android:name="android.permission.READ_CONTACTS" />`
 
 Include the following in your **app module** `build.gradle` file:
 
